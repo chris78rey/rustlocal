@@ -1,0 +1,20 @@
+[package]
+name = "contador-pdf"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+pdf-extract = "0.7"
+lopdf = "0.34"
+
+[[bin]]
+name = "contador-pdf"
+path = "src/main.rs"
+
+[[bin]]
+name = "extract-pdf"
+path = "src/bin/extract-pdf.rs"
+
+[[bin]]
+name = "merge-pdfs"
+path = "src/bin/merge-pdfs.rs"

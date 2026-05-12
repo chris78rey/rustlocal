@@ -6,6 +6,14 @@ edition = "2024"
 [dependencies]
 pdf-extract = "0.7"
 lopdf = "0.34"
+regex = "1"
+strsim = "0.11"
+calamine = "0.26"
+eframe = "0.34"
+egui = "0.34"
+polars = { version = "0.53", features = ["parquet", "fmt", "dtype-full"] }
+rfd = "0.17"
+anyhow = "1"
 
 [[bin]]
 name = "contador-pdf"
@@ -18,3 +26,23 @@ path = "src/bin/extract-pdf.rs"
 [[bin]]
 name = "merge-pdfs"
 path = "src/bin/merge-pdfs.rs"
+
+[[bin]]
+name = "find-paciente"
+path = "src/bin/find-paciente.rs"
+
+[[bin]]
+name = "organizar-pdfs"
+path = "src/bin/organizar-pdfs.rs"
+
+[[bin]]
+name = "egui-demo"
+path = "src/bin/egui-demo.rs"
+
+[[bin]]
+name = "perfilador-parquet"
+path = "src/bin/perfilador-parquet.rs"
+
+[[bin]]
+name = "inspect-parquet"
+path = "src/bin/inspect-parquet.rs"
